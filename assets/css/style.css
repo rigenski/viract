@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #111827;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  color: #fff;
+}
+
+.container {
+  width: 960px;
+  height: 600px;
+}
+
+#main {
+  display: flex;
+  position: relative;
+  border-radius: 24px;
+  background: #1f2937;
+}
+
+#main .left, #main .right {
+  flex-basis: 280px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#main .left {
+  text-align: center;
+}
+
+#main img {
+  height: 64px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+#main h2 {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+#main h4 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+#game {
+  flex-basis: 400px;
+  background: #374151;
+}
+
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal .card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background: #1f2937;
+  padding: 24px;
+  border-radius: 24px;
+}
+
+.modal h2 {
+  font-size: 24px;
+  margin-bottom: 36px;
+  text-align: center;
+}
+
+.modal h4 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.modal button {
+  width: 100%;
+  border: none;
+  border-radius: 24px;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 16px;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+  background: #22c55e;
+  color: #fff;
+}
+
+
+.modal button.restart {
+  background: #ef4444;
+  color: #fff;
+}
+
+.instruction-icon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.instruction-icon img {
+  height: 64px;
+}
+
+#instruction ol {
+  padding-left: 24px;
+  margin-top: 36px;
+  margin-bottom: 36px;
+}
+
+#instruction li {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+#instruction input {
+  width: 100%;
+  padding: 16px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 24px;
+  background: #111827;
+  color: white;
+  border: none;
+  margin-bottom: 24px;
+}
+
+#instruction input:focus {
+  outline: none;
+}
+
+.hide {
+  display: none;
+}
+
+#end h4 {
+  margin-bottom: 16px;
+}
+
+#pause h4 {
+  margin-bottom: 24px;
+}
+
+#pause input {
+  margin-bottom: 36px;
+  width: 100%;
+}
+
+#highscore-list {
+  margin-bottom: 36px;
+}
+
+#highscore-list table {
+  width: 100%;
+}
+
+#highscore-list th, td {
+  padding: 10px;
+}
+
+

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Virus Attack</title>
+    <link rel="icon" href="./assets/images/icon.png" />
+    <script src="./assets/js/script.js" type="module" defer></script>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="main">
+        <div class="left">
+          <img id="icon" src="./assets/images/icon.png" alt="" />
+          <h2>VIRUS ATTACK</h2>
+        </div>
+        <canvas id="game"></canvas>
+        <div class="right">
+          <h4>Time:</h4>
+          <h2><span id="running-time">0</span>s</h2>
+          <h4>Score:</h4>
+          <h2><span id="running-score">0</span></h2>
+        </div>
+      </div>
+
+      <div id="instruction" class="modal">
+        <div class="card">
+          <div class="instruction-icon">
+            <img src="./assets/images/icon.png" alt=""/>
+          </div>
+          <h2>Game Instruction</h2>
+          <ol>
+            <li>
+              Input Username and Click Play
+            </li>
+            <li>
+              Destroy Virus with D, F, J, K Key
+            </li>
+            <li>
+              React Highscore
+            </li>
+            <li>
+              Enjoy.
+            </li>
+          </ol>
+          <form id="play-form">
+            <input type="text" id="play-input" placeholder="Input Username">
+            <button type="submit" id="play-button">PLAY</button>
+          </form>
+        </div>
+      </div>
+
+      <div id="end" class="modal hide">
+        <div class="card">
+          <h2 class="result">Game Over</h2>
+          <h4>Your Score: <span class="score"></span></h4>
+          <h4>Time: <span class="timer"></span>s</h4>
+          <h4>Player: <span class="player"></span></h4>
+          <button onclick="window.location.reload()" class="restart">
+            Restart
+          </button>
+        </div>
+      </div>
+
+      <div id="pause" class="modal hide">
+        <div class="card">
+          <h2>Paused</h2>
+          <button class="continue">Continue</button>
+          <button onclick="window.location.reload()" class="restart">
+            Restart
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
